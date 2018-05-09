@@ -1,0 +1,4 @@
+Symlinking /home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/devel/lib/pkgconfig/my_APMrover.pc
+Symlinking /home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/devel/lib/my_APMrover/PN_node
+Symlinking /home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/devel/share/my_APMrover/cmake/my_APMroverConfig-version.cmake
+Symlinking /home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/devel/share/my_APMrover/cmake/my_APMroverConfig.cmake

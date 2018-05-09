@@ -1,0 +1,8 @@
+Symlinking /home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/devel/./setup.bash
+Symlinking /home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/devel/./env.sh
+Symlinking /home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/devel/./_setup_util.py
+Symlinking /home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/devel/./setup.sh
+Symlinking /home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/devel/./setup.zsh
+Symlinking /home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/devel/lib/pkgconfig/catkin_tools_prebuild.pc
+Symlinking /home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig.cmake
+Symlinking /home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig-version.cmake
