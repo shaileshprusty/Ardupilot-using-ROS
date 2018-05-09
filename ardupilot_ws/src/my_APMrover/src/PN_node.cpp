@@ -44,8 +44,8 @@ int main(int argc, char **argv)
 
   ros::NodeHandle m, n;
 
-  ros::Subscriber global_sub = m.subscribe("", 1000, global_Callback);
-  ros::Subscriber compass_sub = n.subscribe("", 1000, compass_Callback);
+  ros::Subscriber global_sub = m.subscribe("/mavros/global_position/global", 1000, global_Callback);
+  ros::Subscriber compass_sub = n.subscribe("/mavros/global_position/compass_hdg", 1000, compass_Callback);
 
   ros::Rate r(100);
   while (ros::ok())
