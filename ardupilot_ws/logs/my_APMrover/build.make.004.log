@@ -1,0 +1,11 @@
+[35m[1mScanning dependencies of target PN_node_turtlesim[0m
+[ 50%] Built target PN_node
+[ 75%] [32mBuilding CXX object CMakeFiles/PN_node_turtlesim.dir/src/PN_node_turtlesim.cpp.o[0m
+/home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/src/my_APMrover/src/PN_node_turtlesim.cpp: In function ‘void pn()’:
+/home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/src/my_APMrover/src/PN_node_turtlesim.cpp:35:1201: error: expected primary-expression before ‘,’ token
+CMakeFiles/PN_node_turtlesim.dir/build.make:62: recipe for target 'CMakeFiles/PN_node_turtlesim.dir/src/PN_node_turtlesim.cpp.o' failed
+make[2]: *** [CMakeFiles/PN_node_turtlesim.dir/src/PN_node_turtlesim.cpp.o] Error 1
+CMakeFiles/Makefile2:1384: recipe for target 'CMakeFiles/PN_node_turtlesim.dir/all' failed
+make[1]: *** [CMakeFiles/PN_node_turtlesim.dir/all] Error 2
+Makefile:138: recipe for target 'all' failed
+make: *** [all] Error 2

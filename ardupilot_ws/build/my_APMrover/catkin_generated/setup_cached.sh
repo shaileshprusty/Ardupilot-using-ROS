@@ -8,6 +8,8 @@
 
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/devel/.private/my_APMrover:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/devel/.private/my_APMrover/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/devel/.private/my_APMrover/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD="/home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/build/my_APMrover"
 export ROSLISP_PACKAGE_DIRECTORIES="/home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/devel/.private/my_APMrover/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
 export ROS_PACKAGE_PATH="/home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/src/my_APMrover:$ROS_PACKAGE_PATH"

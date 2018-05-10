@@ -25,6 +25,7 @@ double x=0, y=0, theta=0;
 void pn()
 {
   ROS_INFO("x = %f \ny = %f \nangle = %f \n\n", x, y, theta);
+  
 }
 
 void global_Callback(const sensor_msgs::NavSatFix::ConstPtr& cordinate)
