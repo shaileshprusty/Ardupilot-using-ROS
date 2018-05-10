@@ -1,4 +1,0 @@
-[ 25%] [32m[1mLinking CXX executable /home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/devel/.private/my_APMrover/lib/my_APMrover/PN_node[0m
-[ 50%] [32m[1mLinking CXX executable /home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/devel/.private/my_APMrover/lib/my_APMrover/PN_node_turtlesim[0m
-[ 75%] Built target PN_node
-[100%] Built target PN_node_turtlesim
