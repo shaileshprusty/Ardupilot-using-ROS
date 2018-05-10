@@ -160,7 +160,7 @@ foreach(t ${my_APMrover_EXPORTED_TARGETS})
   endif()
 endforeach()
 
-set(depends "roscpp;sensor_msgs;std_msgs;geometry_msgs;turtlesim")
+set(depends "")
 foreach(depend ${depends})
   string(REPLACE " " ";" depend_list ${depend})
   # the package name of the dependency must be kept in a unique variable so that it is not overwritten in recursive calls

@@ -12,7 +12,6 @@ find_package(catkin REQUIRED COMPONENTS
   sensor_msgs
   std_msgs
   geometry_msgs
-  turtlesim
 )
 
 ## System dependencies are found with CMake's conventions
@@ -107,12 +106,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES my_APMrover
-  CATKIN_DEPENDS 
-	roscpp
-	sensor_msgs 
-	std_msgs 
-	geometry_msgs 
-	turtlesim
+#  CATKIN_DEPENDS roscpp sensor_msgs std_msgs geometry_msgs turtlesim
 #  DEPENDS system_lib
 )
 
@@ -208,5 +202,5 @@ include_directories(
 add_executable(PN_node src/PN_node.cpp)
 target_link_libraries(PN_node ${catkin_LIBRARIES})
 
-add_executable(PN_node_turtlesim src/PN_node_turtlesim.cpp)
-target_link_libraries(PN_node_turtlesim ${catkin_LIBRARIES})
+add_executable(velocity_sending_node src/velocity_sending_node.cpp)
+target_link_libraries(velocity_sending_node ${catkin_LIBRARIES})

@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/install/setup.sh

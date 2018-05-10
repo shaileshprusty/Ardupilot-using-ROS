@@ -1,0 +1,8 @@
+prefix=/home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/install
+
+Name: my_turtlesim
+Description: Description of my_turtlesim
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/install/lib 
+Requires: 
