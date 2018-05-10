@@ -36,7 +36,7 @@ void pn()
   velocities.linear.x = Vk*(a-x)/sqrt((a-x)*(a-x) + (b-y)*(b-y));
   velocities.linear.y = Vk*(b-y)/sqrt((a-x)*(a-x) + (b-y)*(b-y));
   velocities.linear.z=0;
-  alpha = 360 - theta - 90 + atan((b-y)/(a-x));
+  alpha = theta - atan((b-y)/(a-x));
   velocities.angular.x=0;
   velocities.angular.y=0;
   velocities.angular.z = kp*alpha;
