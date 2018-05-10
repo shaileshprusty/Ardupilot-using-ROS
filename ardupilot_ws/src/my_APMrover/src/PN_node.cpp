@@ -16,6 +16,7 @@
  * =====================================================================================
  */
 
+#include <iostream>
 #include "ros/ros.h"
 #include "std_msgs/Float64.h"
 #include "sensor_msgs/NavSatFix.h"
@@ -65,6 +66,11 @@ int main(int argc, char **argv)
 
   ros::Publisher pub = n.advertise<geometry_msgs::Twist>("/mavros/setpoint_velocity/cmd_vel", 1000);
 
+  std::cout<<"x-coordinate: ";
+  std::cin>>a;
+  std::cout<<"y-coordinate: ";
+  std::cin>>b;
+  
   ros::Rate r(100);
   while (ros::ok())
   {

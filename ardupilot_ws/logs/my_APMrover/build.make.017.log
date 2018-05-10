@@ -1,0 +1,11 @@
+[35m[1mScanning dependencies of target PN_node[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/PN_node.dir/src/PN_node.cpp.o[0m
+[ 75%] Built target PN_node_turtlesim
+[01m[K/home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/src/my_APMrover/src/PN_node.cpp:19:22:[m[K [01;31m[Kfatal error: [m[Kiostream.h: No such file or directory
+compilation terminated.
+CMakeFiles/PN_node.dir/build.make:62: recipe for target 'CMakeFiles/PN_node.dir/src/PN_node.cpp.o' failed
+make[2]: *** [CMakeFiles/PN_node.dir/src/PN_node.cpp.o] Error 1
+CMakeFiles/Makefile2:1347: recipe for target 'CMakeFiles/PN_node.dir/all' failed
+Makefile:138: recipe for target 'all' failed
+make[1]: *** [CMakeFiles/PN_node.dir/all] Error 2
+make: *** [all] Error 2
