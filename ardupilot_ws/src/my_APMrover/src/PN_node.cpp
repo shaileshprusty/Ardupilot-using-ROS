@@ -25,7 +25,7 @@
 
 #define Vk 1
 
-#define kp 10
+#define kp 0.2
 
 double a, b, x=0, y=0, theta=0, alpha;
 
@@ -61,8 +61,8 @@ int main(int argc, char **argv)
 
   ros::NodeHandle l, m, n;
 
-  ros::Subscriber global_sub = l.subscribe("/mavros/global_position/global", 1000, global_Callback);
-  ros::Subscriber compass_sub = m.subscribe("/mavros/global_position/compass_hdg", 1000, compass_Callback);
+  ros::Subscriber global_sub = l.subscribe("/mavros/global_position/global", 1, global_Callback);
+  ros::Subscriber compass_sub = m.subscribe("/mavros/global_position/compass_hdg", 1, compass_Callback);
 
   ros::Publisher pub = n.advertise<geometry_msgs::Twist>("/mavros/setpoint_velocity/cmd_vel_unstamped", 1000);
 
@@ -75,9 +75,9 @@ int main(int argc, char **argv)
   while (ros::ok())
   {
     ros::spinOnce();
-    r.sleep();
     pn();
     pub.publish(velocities);
+    r.sleep();
   }
 
   return 0;
