@@ -1,6 +1,0 @@
-[ 33%] Built target PN_node_turtlesim
-[35m[1mScanning dependencies of target velocity_sending_node[0m
-[ 66%] Built target PN_node
-[ 83%] [32mBuilding CXX object CMakeFiles/velocity_sending_node.dir/src/velocity_sending_node.cpp.o[0m
-[100%] [32m[1mLinking CXX executable /home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/devel/.private/my_APMrover/lib/my_APMrover/velocity_sending_node[0m
-[100%] Built target velocity_sending_node

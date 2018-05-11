@@ -1,0 +1,5 @@
+my_ArduCopter
+/home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/devel/.private/my_ArduCopter/lib/pkgconfig/my_ArduCopter.pc /home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/devel/lib/pkgconfig/my_ArduCopter.pc
+/home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/devel/.private/my_ArduCopter/lib/my_ArduCopter/copter_P_control /home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/devel/lib/my_ArduCopter/copter_P_control
+/home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/devel/.private/my_ArduCopter/share/my_ArduCopter/cmake/my_ArduCopterConfig.cmake /home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/devel/share/my_ArduCopter/cmake/my_ArduCopterConfig.cmake
+/home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/devel/.private/my_ArduCopter/share/my_ArduCopter/cmake/my_ArduCopterConfig-version.cmake /home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/devel/share/my_ArduCopter/cmake/my_ArduCopterConfig-version.cmake

@@ -1,0 +1,4 @@
+[35m[1mScanning dependencies of target copter_P_control[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/copter_P_control.dir/src/copter_P_control.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/devel/.private/my_ArduCopter/lib/my_ArduCopter/copter_P_control[0m
+[100%] Built target copter_P_control

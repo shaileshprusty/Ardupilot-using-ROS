@@ -1,7 +1,0 @@
-[35m[1mScanning dependencies of target turtlesim_P_controller[0m
-[ 25%] Built target PN_node
-[ 37%] [32mBuilding CXX object CMakeFiles/turtlesim_P_controller.dir/src/turtlesim_P_controller.cpp.o[0m
-[ 62%] Built target PN_node_turtlesim
-[ 87%] Built target velocity_sending_node
-[100%] [32m[1mLinking CXX executable /home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/devel/.private/my_APMrover/lib/my_APMrover/turtlesim_P_controller[0m
-[100%] Built target turtlesim_P_controller

@@ -1,0 +1,4 @@
+Symlinking /home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/devel/lib/pkgconfig/my_ArduCopter.pc
+Symlinking /home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/devel/lib/my_ArduCopter/copter_P_control
+Symlinking /home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/devel/share/my_ArduCopter/cmake/my_ArduCopterConfig.cmake
+Symlinking /home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/devel/share/my_ArduCopter/cmake/my_ArduCopterConfig-version.cmake

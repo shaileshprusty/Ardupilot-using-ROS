@@ -1,5 +1,0 @@
-Symlinking /home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/devel/lib/pkgconfig/my_turtlesim.pc
-Symlinking /home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/devel/lib/my_turtlesim/turtlesim_P_controller
-Symlinking /home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/devel/lib/my_turtlesim/PN_node_turtlesim
-Symlinking /home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/devel/share/my_turtlesim/cmake/my_turtlesimConfig-version.cmake
-Symlinking /home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/devel/share/my_turtlesim/cmake/my_turtlesimConfig.cmake

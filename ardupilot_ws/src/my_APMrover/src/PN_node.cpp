@@ -3,7 +3,7 @@
  *
  *       Filename:  PN_node.cpp
  *
- *    Description:  Proportional Navigation for Rover
+ *    Description:  Proportional Navigation for ArduRover
  *
  *        Version:  1.0
  *        Created:  Wednesday 09 May 2018 07:17:34  IST

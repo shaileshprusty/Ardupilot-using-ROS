@@ -1,0 +1,269 @@
+[35m[1mScanning dependencies of target copter_P_control[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/copter_P_control.dir/src/copter_P_control.cpp.o[0m
+/home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/src/my_ArduCopter/src/copter_P_control.cpp:42:1: error: ‘x’ does not name a type
+ x.data = 0;
+ ^
+/home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/src/my_ArduCopter/src/copter_P_control.cpp:43:1: error: ‘y’ does not name a type
+ y.data = 0;
+ ^
+/home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/src/my_ArduCopter/src/copter_P_control.cpp:44:1: error: ‘theta’ does not name a type
+ theta.data = 0;
+ ^
+/home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/src/my_ArduCopter/src/copter_P_control.cpp: In function ‘void P_Control()’:
+/home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/src/my_ArduCopter/src/copter_P_control.cpp:66:16: error: no match for ‘operator<=’ (operand types are ‘std_msgs::Float64 {aka std_msgs::Float64_<std::allocator<void> >}’ and ‘double’)
+   if (LOS_dist <= 0.0000000002)
+                ^
+In file included from /usr/include/c++/5/bits/stl_algobase.h:64:0,
+                 from /usr/include/c++/5/bits/char_traits.h:39,
+                 from /usr/include/c++/5/ios:40,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from /home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/src/my_ArduCopter/src/copter_P_control.cpp:19:
+/usr/include/c++/5/bits/stl_pair.h:239:5: note: candidate: template<class _T1, class _T2> bool std::operator<=(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)
+     operator<=(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+     ^
+/usr/include/c++/5/bits/stl_pair.h:239:5: note:   template argument deduction/substitution failed:
+/home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/src/my_ArduCopter/src/copter_P_control.cpp:66:19: note:   ‘std_msgs::Float64 {aka std_msgs::Float64_<std::allocator<void> >}’ is not derived from ‘const std::pair<_T1, _T2>’
+   if (LOS_dist <= 0.0000000002)
+                   ^
+In file included from /usr/include/c++/5/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/5/bits/char_traits.h:39,
+                 from /usr/include/c++/5/ios:40,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from /home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/src/my_ArduCopter/src/copter_P_control.cpp:19:
+/usr/include/c++/5/bits/stl_iterator.h:316:5: note: candidate: template<class _Iterator> bool std::operator<=(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+     operator<=(const reverse_iterator<_Iterator>& __x,
+     ^
+/usr/include/c++/5/bits/stl_iterator.h:316:5: note:   template argument deduction/substitution failed:
+/home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/src/my_ArduCopter/src/copter_P_control.cpp:66:19: note:   ‘std_msgs::Float64 {aka std_msgs::Float64_<std::allocator<void> >}’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+   if (LOS_dist <= 0.0000000002)
+                   ^
+In file included from /usr/include/c++/5/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/5/bits/char_traits.h:39,
+                 from /usr/include/c++/5/ios:40,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from /home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/src/my_ArduCopter/src/copter_P_control.cpp:19:
+/usr/include/c++/5/bits/stl_iterator.h:366:5: note: candidate: template<class _IteratorL, class _IteratorR> bool std::operator<=(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)
+     operator<=(const reverse_iterator<_IteratorL>& __x,
+     ^
+/usr/include/c++/5/bits/stl_iterator.h:366:5: note:   template argument deduction/substitution failed:
+/home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/src/my_ArduCopter/src/copter_P_control.cpp:66:19: note:   ‘std_msgs::Float64 {aka std_msgs::Float64_<std::allocator<void> >}’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+   if (LOS_dist <= 0.0000000002)
+                   ^
+In file included from /usr/include/c++/5/string:52:0,
+                 from /usr/include/c++/5/bits/locale_classes.h:40,
+                 from /usr/include/c++/5/bits/ios_base.h:41,
+                 from /usr/include/c++/5/ios:42,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from /home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/src/my_ArduCopter/src/copter_P_control.cpp:19:
+/usr/include/c++/5/bits/basic_string.h:5061:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator<=(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/5/bits/basic_string.h:5061:5: note:   template argument deduction/substitution failed:
+/home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/src/my_ArduCopter/src/copter_P_control.cpp:66:19: note:   ‘std_msgs::Float64 {aka std_msgs::Float64_<std::allocator<void> >}’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
+   if (LOS_dist <= 0.0000000002)
+                   ^
+In file included from /usr/include/c++/5/string:52:0,
+                 from /usr/include/c++/5/bits/locale_classes.h:40,
+                 from /usr/include/c++/5/bits/ios_base.h:41,
+                 from /usr/include/c++/5/ios:42,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from /home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/src/my_ArduCopter/src/copter_P_control.cpp:19:
+/usr/include/c++/5/bits/basic_string.h:5073:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator<=(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     operator<=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/5/bits/basic_string.h:5073:5: note:   template argument deduction/substitution failed:
+/home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/src/my_ArduCopter/src/copter_P_control.cpp:66:19: note:   ‘std_msgs::Float64 {aka std_msgs::Float64_<std::allocator<void> >}’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
+   if (LOS_dist <= 0.0000000002)
+                   ^
+In file included from /usr/include/c++/5/string:52:0,
+                 from /usr/include/c++/5/bits/locale_classes.h:40,
+                 from /usr/include/c++/5/bits/ios_base.h:41,
+                 from /usr/include/c++/5/ios:42,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from /home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/src/my_ArduCopter/src/copter_P_control.cpp:19:
+/usr/include/c++/5/bits/basic_string.h:5085:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator<=(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<=(const _CharT* __lhs,
+     ^
+/usr/include/c++/5/bits/basic_string.h:5085:5: note:   template argument deduction/substitution failed:
+/home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/src/my_ArduCopter/src/copter_P_control.cpp:66:19: note:   mismatched types ‘const _CharT*’ and ‘std_msgs::Float64_<std::allocator<void> >’
+   if (LOS_dist <= 0.0000000002)
+                   ^
+In file included from /usr/include/c++/5/vector:64:0,
+                 from /usr/include/boost/format.hpp:17,
+                 from /usr/include/boost/math/policies/error_handling.hpp:31,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/kinetic/include/ros/time.h:58,
+                 from /opt/ros/kinetic/include/ros/ros.h:38,
+                 from /home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/src/my_ArduCopter/src/copter_P_control.cpp:20:
+/usr/include/c++/5/bits/stl_vector.h:1547:5: note: candidate: template<class _Tp, class _Alloc> bool std::operator<=(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)
+     operator<=(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+     ^
+/usr/include/c++/5/bits/stl_vector.h:1547:5: note:   template argument deduction/substitution failed:
+/home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/src/my_ArduCopter/src/copter_P_control.cpp:66:19: note:   ‘std_msgs::Float64 {aka std_msgs::Float64_<std::allocator<void> >}’ is not derived from ‘const std::vector<_Tp, _Alloc>’
+   if (LOS_dist <= 0.0000000002)
+                   ^
+In file included from /usr/include/c++/5/map:60:0,
+                 from /opt/ros/kinetic/include/ros/console.h:42,
+                 from /opt/ros/kinetic/include/ros/ros.h:40,
+                 from /home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/src/my_ArduCopter/src/copter_P_control.cpp:20:
+/usr/include/c++/5/bits/stl_tree.h:1307:5: note: candidate: template<class _Key, class _Val, class _KeyOfValue, class _Compare, class _Alloc> bool std::operator<=(const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&, const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&)
+     operator<=(const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __x,
+     ^
+/usr/include/c++/5/bits/stl_tree.h:1307:5: note:   template argument deduction/substitution failed:
+/home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/src/my_ArduCopter/src/copter_P_control.cpp:66:19: note:   ‘std_msgs::Float64 {aka std_msgs::Float64_<std::allocator<void> >}’ is not derived from ‘const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>’
+   if (LOS_dist <= 0.0000000002)
+                   ^
+In file included from /usr/include/c++/5/map:61:0,
+                 from /opt/ros/kinetic/include/ros/console.h:42,
+                 from /opt/ros/kinetic/include/ros/ros.h:40,
+                 from /home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/src/my_ArduCopter/src/copter_P_control.cpp:20:
+/usr/include/c++/5/bits/stl_map.h:1111:5: note: candidate: template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator<=(const std::map<_Key, _Tp, _Compare, _Alloc>&, const std::map<_Key, _Tp, _Compare, _Alloc>&)
+     operator<=(const map<_Key, _Tp, _Compare, _Alloc>& __x,
+     ^
+/usr/include/c++/5/bits/stl_map.h:1111:5: note:   template argument deduction/substitution failed:
+/home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/src/my_ArduCopter/src/copter_P_control.cpp:66:19: note:   ‘std_msgs::Float64 {aka std_msgs::Float64_<std::allocator<void> >}’ is not derived from ‘const std::map<_Key, _Tp, _Compare, _Alloc>’
+   if (LOS_dist <= 0.0000000002)
+                   ^
+In file included from /usr/include/c++/5/map:62:0,
+                 from /opt/ros/kinetic/include/ros/console.h:42,
+                 from /opt/ros/kinetic/include/ros/ros.h:40,
+                 from /home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/src/my_ArduCopter/src/copter_P_control.cpp:20:
+/usr/include/c++/5/bits/stl_multimap.h:1012:5: note: candidate: template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator<=(const std::multimap<_Key, _Tp, _Compare, _Alloc>&, const std::multimap<_Key, _Tp, _Compare, _Alloc>&)
+     operator<=(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,
+     ^
+/usr/include/c++/5/bits/stl_multimap.h:1012:5: note:   template argument deduction/substitution failed:
+/home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/src/my_ArduCopter/src/copter_P_control.cpp:66:19: note:   ‘std_msgs::Float64 {aka std_msgs::Float64_<std::allocator<void> >}’ is not derived from ‘const std::multimap<_Key, _Tp, _Compare, _Alloc>’
+   if (LOS_dist <= 0.0000000002)
+                   ^
+In file included from /usr/include/c++/5/set:61:0,
+                 from /opt/ros/kinetic/include/ros/forwards.h:34,
+                 from /opt/ros/kinetic/include/ros/common.h:37,
+                 from /opt/ros/kinetic/include/ros/ros.h:43,
+                 from /home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/src/my_ArduCopter/src/copter_P_control.cpp:20:
+/usr/include/c++/5/bits/stl_set.h:880:5: note: candidate: template<class _Key, class _Compare, class _Alloc> bool std::operator<=(const std::set<_Key, _Compare, _Alloc>&, const std::set<_Key, _Compare, _Alloc>&)
+     operator<=(const set<_Key, _Compare, _Alloc>& __x,
+     ^
+/usr/include/c++/5/bits/stl_set.h:880:5: note:   template argument deduction/substitution failed:
+/home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/src/my_ArduCopter/src/copter_P_control.cpp:66:19: note:   ‘std_msgs::Float64 {aka std_msgs::Float64_<std::allocator<void> >}’ is not derived from ‘const std::set<_Key, _Compare, _Alloc>’
+   if (LOS_dist <= 0.0000000002)
+                   ^
+In file included from /usr/include/c++/5/set:62:0,
+                 from /opt/ros/kinetic/include/ros/forwards.h:34,
+                 from /opt/ros/kinetic/include/ros/common.h:37,
+                 from /opt/ros/kinetic/include/ros/ros.h:43,
+                 from /home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/src/my_ArduCopter/src/copter_P_control.cpp:20:
+/usr/include/c++/5/bits/stl_multiset.h:863:5: note: candidate: template<class _Key, class _Compare, class _Alloc> bool std::operator<=(const std::multiset<_Key, _Compare, _Alloc>&, const std::multiset<_Key, _Compare, _Alloc>&)
+     operator<=(const multiset<_Key, _Compare, _Alloc>& __x,
+     ^
+/usr/include/c++/5/bits/stl_multiset.h:863:5: note:   template argument deduction/substitution failed:
+/home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/src/my_ArduCopter/src/copter_P_control.cpp:66:19: note:   ‘std_msgs::Float64 {aka std_msgs::Float64_<std::allocator<void> >}’ is not derived from ‘const std::multiset<_Key, _Compare, _Alloc>’
+   if (LOS_dist <= 0.0000000002)
+                   ^
+In file included from /usr/include/c++/5/list:63:0,
+                 from /opt/ros/kinetic/include/ros/forwards.h:35,
+                 from /opt/ros/kinetic/include/ros/common.h:37,
+                 from /opt/ros/kinetic/include/ros/ros.h:43,
+                 from /home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/src/my_ArduCopter/src/copter_P_control.cpp:20:
+/usr/include/c++/5/bits/stl_list.h:1855:5: note: candidate: template<class _Tp, class _Alloc> bool std::operator<=(const std::__cxx11::list<_Tp, _Alloc>&, const std::__cxx11::list<_Tp, _Alloc>&)
+     operator<=(const list<_Tp, _Alloc>& __x, const list<_Tp, _Alloc>& __y)
+     ^
+/usr/include/c++/5/bits/stl_list.h:1855:5: note:   template argument deduction/substitution failed:
+/home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/src/my_ArduCopter/src/copter_P_control.cpp:66:19: note:   ‘std_msgs::Float64 {aka std_msgs::Float64_<std::allocator<void> >}’ is not derived from ‘const std::__cxx11::list<_Tp, _Alloc>’
+   if (LOS_dist <= 0.0000000002)
+                   ^
+/home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/src/my_ArduCopter/src/copter_P_control.cpp:68:37: error: no match for ‘operator*’ (operand types are ‘double’ and ‘std_msgs::Float64 {aka std_msgs::Float64_<std::allocator<void> >}’)
+     velocities.linear.x = Vk*sin(3.14*theta/180.0);
+                                     ^
+In file included from /usr/include/boost/config/no_tr1/complex.hpp:21:0,
+                 from /usr/include/boost/math/policies/error_handling.hpp:15,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/kinetic/include/ros/time.h:58,
+                 from /opt/ros/kinetic/include/ros/ros.h:38,
+                 from /home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/src/my_ArduCopter/src/copter_P_control.cpp:20:
+/usr/include/c++/5/complex:386:5: note: candidate: template<class _Tp> std::complex<_Tp> std::operator*(const std::complex<_Tp>&, const std::complex<_Tp>&)
+     operator*(const complex<_Tp>& __x, const complex<_Tp>& __y)
+     ^
+/usr/include/c++/5/complex:386:5: note:   template argument deduction/substitution failed:
+/home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/src/my_ArduCopter/src/copter_P_control.cpp:68:38: note:   mismatched types ‘const std::complex<_Tp>’ and ‘double’
+     velocities.linear.x = Vk*sin(3.14*theta/180.0);
+                                      ^
+In file included from /usr/include/boost/config/no_tr1/complex.hpp:21:0,
+                 from /usr/include/boost/math/policies/error_handling.hpp:15,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/kinetic/include/ros/time.h:58,
+                 from /opt/ros/kinetic/include/ros/ros.h:38,
+                 from /home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/src/my_ArduCopter/src/copter_P_control.cpp:20:
+/usr/include/c++/5/complex:395:5: note: candidate: template<class _Tp> std::complex<_Tp> std::operator*(const std::complex<_Tp>&, const _Tp&)
+     operator*(const complex<_Tp>& __x, const _Tp& __y)
+     ^
+/usr/include/c++/5/complex:395:5: note:   template argument deduction/substitution failed:
+/home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/src/my_ArduCopter/src/copter_P_control.cpp:68:38: note:   mismatched types ‘const std::complex<_Tp>’ and ‘double’
+     velocities.linear.x = Vk*sin(3.14*theta/180.0);
+                                      ^
+In file included from /usr/include/boost/config/no_tr1/complex.hpp:21:0,
+                 from /usr/include/boost/math/policies/error_handling.hpp:15,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/kinetic/include/ros/time.h:58,
+                 from /opt/ros/kinetic/include/ros/ros.h:38,
+                 from /home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/src/my_ArduCopter/src/copter_P_control.cpp:20:
+/usr/include/c++/5/complex:404:5: note: candidate: template<class _Tp> std::complex<_Tp> std::operator*(const _Tp&, const std::complex<_Tp>&)
+     operator*(const _Tp& __x, const complex<_Tp>& __y)
+     ^
+/usr/include/c++/5/complex:404:5: note:   template argument deduction/substitution failed:
+/home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/src/my_ArduCopter/src/copter_P_control.cpp:68:38: note:   ‘std_msgs::Float64 {aka std_msgs::Float64_<std::allocator<void> >}’ is not derived from ‘const std::complex<_Tp>’
+     velocities.linear.x = Vk*sin(3.14*theta/180.0);
+                                      ^
+/home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/src/my_ArduCopter/src/copter_P_control.cpp:69:37: error: no match for ‘operator*’ (operand types are ‘double’ and ‘std_msgs::Float64 {aka std_msgs::Float64_<std::allocator<void> >}’)
+     velocities.linear.y = Vk*cos(3.14*theta/180.0);
+                                     ^
+In file included from /usr/include/boost/config/no_tr1/complex.hpp:21:0,
+                 from /usr/include/boost/math/policies/error_handling.hpp:15,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/kinetic/include/ros/time.h:58,
+                 from /opt/ros/kinetic/include/ros/ros.h:38,
+                 from /home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/src/my_ArduCopter/src/copter_P_control.cpp:20:
+/usr/include/c++/5/complex:386:5: note: candidate: template<class _Tp> std::complex<_Tp> std::operator*(const std::complex<_Tp>&, const std::complex<_Tp>&)
+     operator*(const complex<_Tp>& __x, const complex<_Tp>& __y)
+     ^
+/usr/include/c++/5/complex:386:5: note:   template argument deduction/substitution failed:
+/home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/src/my_ArduCopter/src/copter_P_control.cpp:69:38: note:   mismatched types ‘const std::complex<_Tp>’ and ‘double’
+     velocities.linear.y = Vk*cos(3.14*theta/180.0);
+                                      ^
+In file included from /usr/include/boost/config/no_tr1/complex.hpp:21:0,
+                 from /usr/include/boost/math/policies/error_handling.hpp:15,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/kinetic/include/ros/time.h:58,
+                 from /opt/ros/kinetic/include/ros/ros.h:38,
+                 from /home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/src/my_ArduCopter/src/copter_P_control.cpp:20:
+/usr/include/c++/5/complex:395:5: note: candidate: template<class _Tp> std::complex<_Tp> std::operator*(const std::complex<_Tp>&, const _Tp&)
+     operator*(const complex<_Tp>& __x, const _Tp& __y)
+     ^
+/usr/include/c++/5/complex:395:5: note:   template argument deduction/substitution failed:
+/home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/src/my_ArduCopter/src/copter_P_control.cpp:69:38: note:   mismatched types ‘const std::complex<_Tp>’ and ‘double’
+     velocities.linear.y = Vk*cos(3.14*theta/180.0);
+                                      ^
+In file included from /usr/include/boost/config/no_tr1/complex.hpp:21:0,
+                 from /usr/include/boost/math/policies/error_handling.hpp:15,
+                 from /usr/include/boost/math/special_functions/round.hpp:14,
+                 from /opt/ros/kinetic/include/ros/time.h:58,
+                 from /opt/ros/kinetic/include/ros/ros.h:38,
+                 from /home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/src/my_ArduCopter/src/copter_P_control.cpp:20:
+/usr/include/c++/5/complex:404:5: note: candidate: template<class _Tp> std::complex<_Tp> std::operator*(const _Tp&, const std::complex<_Tp>&)
+     operator*(const _Tp& __x, const complex<_Tp>& __y)
+     ^
+/usr/include/c++/5/complex:404:5: note:   template argument deduction/substitution failed:
+/home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/src/my_ArduCopter/src/copter_P_control.cpp:69:38: note:   ‘std_msgs::Float64 {aka std_msgs::Float64_<std::allocator<void> >}’ is not derived from ‘const std::complex<_Tp>’
+     velocities.linear.y = Vk*cos(3.14*theta/180.0);
+                                      ^
+CMakeFiles/copter_P_control.dir/build.make:62: recipe for target 'CMakeFiles/copter_P_control.dir/src/copter_P_control.cpp.o' failed
+make[2]: *** [CMakeFiles/copter_P_control.dir/src/copter_P_control.cpp.o] Error 1
+CMakeFiles/Makefile2:67: recipe for target 'CMakeFiles/copter_P_control.dir/all' failed
+make[1]: *** [CMakeFiles/copter_P_control.dir/all] Error 2
+Makefile:138: recipe for target 'all' failed
+make: *** [all] Error 2
