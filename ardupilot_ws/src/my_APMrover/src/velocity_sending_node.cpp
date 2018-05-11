@@ -34,13 +34,13 @@ int main(int argv, char **argc)
   
   ros::Rate loop_rate(10);
   
-  msg.linear.x=1000000000;
+  msg.linear.x=0;
   msg.linear.y=0;
   msg.linear.z=0;
 
   msg.angular.x=0;
   msg.angular.y=0;
-  msg.angular.z=1;
+  msg.angular.z=2;
   
   while(ros::ok()) 
   {

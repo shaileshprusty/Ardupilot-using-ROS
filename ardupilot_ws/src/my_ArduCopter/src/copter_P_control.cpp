@@ -25,26 +25,26 @@
 
 using namespace std;
 
-#define Vk 1
+#define Vk 500
 
-#define kp 0.2
+#define kp 0.8
 
-std_msgs::Float64 a;
-std_msgs::Float64 b;
-std_msgs::Float64 x;
-std_msgs::Float64 y;
-std_msgs::Float64 theta;
-std_msgs::Float64 alpha;
-std_msgs::Float64 beta;
+std_msgs::Float64 target_LO;
+std_msgs::Float64 target_LA;
+std_msgs::Float64 position_LO;
+std_msgs::Float64 position_LA;
+std_msgs::Float64 theta; 		//local orient...
+std_msgs::Float64 alpha;		//LOS_angle
+std_msgs::Float64 beta;  	//Angle b/w LOS & orientation
 std_msgs::Float64 LOS_dist;
 
 geometry_msgs::Twist velocities;
 
 void P_Control()
 {
-  LOS_dist.data = sqrt((a.data-x.data)*(a.data-x.data)+(b.data-y.data)*(b.data-y.data));
+  LOS_dist.data = sqrt((target_LO.data-position_LO.data)*(target_LO.data-position_LO.data)+(target_LA.data-position_LA.data)*(target_LA.data-position_LA.data));
 
-  alpha.data = atan2((a.data-x.data),(b.data-y.data));
+  alpha.data = atan2((target_LO.data-position_LO.data),(target_LA.data-position_LA.data));
 
   beta.data = 3.14*theta.data/180.0 - alpha.data;
   if (beta.data >= 3.14)
@@ -52,16 +52,16 @@ void P_Control()
   if (beta.data <= -3.14)
     beta.data += 2*3.14;
 
-  cout<<"\nAngle b/w LOS & orientation: "<<beta.data<<"\nLOS angle: "<<alpha.data<<"\nOrientation angle: "<<theta.data<<endl;
+  cout<<"\nAngle b/w LOS & orientation: "<<beta.data*180.0/3.14<<"\nLOS angle: "<<alpha.data*180.0/3.14<<"\nOrientation angle: "<<theta.data<<"\nDistance:"<<LOS_dist.data<<endl;
 
   velocities.linear.z = 0;
   velocities.angular.x = 0;
   velocities.angular.y = 0;
 
-  if (LOS_dist.data <= 0.0000000002)
+  if (LOS_dist.data >= 0.00092)
   {
-    velocities.linear.x = Vk*sin(3.14*theta.data/180.0);
-    velocities.linear.y = Vk*cos(3.14*theta.data/180.0);
+    velocities.linear.x = (Vk*sin(3.14*theta.data/180.0));
+    velocities.linear.y = (Vk*cos(3.14*theta.data/180.0));
     velocities.angular.z = kp*beta.data;
   }
   else
@@ -74,8 +74,8 @@ void P_Control()
 
 void global_Callback(const sensor_msgs::NavSatFix::ConstPtr& cordinate)
 {
-  x.data = cordinate->latitude;
-  y.data = cordinate->longitude;
+  position_LA.data = cordinate->latitude;
+  position_LO.data = cordinate->longitude;
 }
 
 void compass_Callback(const std_msgs::Float64::ConstPtr& angle)
@@ -92,16 +92,16 @@ int main(int argc, char **argv)
   ros::Subscriber global_sub = l.subscribe("/mavros/global_position/global", 1, global_Callback);
   ros::Subscriber compass_sub = m.subscribe("/mavros/global_position/compass_hdg", 1, compass_Callback);
 
-  ros::Publisher pub = n.advertise<geometry_msgs::Twist>("/mavros/setpoint_velocity/cmd_vel_unstamped", 1000);
+  ros::Publisher pub = n.advertise<geometry_msgs::Twist>("/mavros/setpoint_velocity/cmd_vel_unstamped", 1);
 
-  x.data = 0;
-  y.data = 0;
+  position_LO.data = 0;
+  position_LA.data = 0;
   theta.data = 0;
   
-  cout<<"x-coordinate: ";
-  cin>>a.data;
-  cout<<"y-coordinate: ";
-  cin>>b.data;
+  cout<<"Target-Latitutde: ";
+  cin>>target_LA.data;
+  cout<<"Target-Longitude: ";
+  cin>>target_LO.data;
 
   ros::Rate r(100);
   while (ros::ok())
