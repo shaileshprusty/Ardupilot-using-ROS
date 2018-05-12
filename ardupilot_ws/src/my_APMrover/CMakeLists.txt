@@ -204,3 +204,6 @@ target_link_libraries(PN_node ${catkin_LIBRARIES})
 
 add_executable(velocity_sending_node src/velocity_sending_node.cpp)
 target_link_libraries(velocity_sending_node ${catkin_LIBRARIES})
+
+add_executable(rover_P_control src/rover_P_control.cpp)
+target_link_libraries(rover_P_control ${catkin_LIBRARIES})
