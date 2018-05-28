@@ -207,3 +207,6 @@ target_link_libraries(velocity_sending_node ${catkin_LIBRARIES})
 
 add_executable(rover_P_control src/rover_P_control.cpp)
 target_link_libraries(rover_P_control ${catkin_LIBRARIES})
+
+add_executable(rover_WP_nav src/rover_WP_nav.cpp)
+target_link_libraries(rover_WP_nav ${catkin_LIBRARIES})

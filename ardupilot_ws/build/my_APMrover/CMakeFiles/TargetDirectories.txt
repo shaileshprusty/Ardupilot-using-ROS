@@ -2,6 +2,7 @@
 /home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/build/my_APMrover/CMakeFiles/test.dir
 /home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/build/my_APMrover/CMakeFiles/install.dir
 /home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/build/my_APMrover/CMakeFiles/install/local.dir
+/home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/build/my_APMrover/CMakeFiles/rover_WP_nav.dir
 /home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/build/my_APMrover/CMakeFiles/velocity_sending_node.dir
 /home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/build/my_APMrover/CMakeFiles/PN_node.dir
 /home/scp/iiit-delhi/Ardupilot-using-ROS/ardupilot_ws/build/my_APMrover/CMakeFiles/edit_cache.dir

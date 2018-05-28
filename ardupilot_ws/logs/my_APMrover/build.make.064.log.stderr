@@ -1,0 +1,4 @@
+make[2]: *** No rule to make target 'CMakeFiles/rover_WP_nav_1.dir/build'.  Stop.
+make[1]: *** [CMakeFiles/rover_WP_nav_1.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [all] Error 2

@@ -166,6 +166,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named rover_WP_nav
+
+# Build rule for target.
+rover_WP_nav: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rover_WP_nav
+.PHONY : rover_WP_nav
+
+# fast build rule for target.
+rover_WP_nav/fast:
+	$(MAKE) -f CMakeFiles/rover_WP_nav.dir/build.make CMakeFiles/rover_WP_nav.dir/build
+.PHONY : rover_WP_nav/fast
+
+#=============================================================================
 # Target rules for targets named velocity_sending_node
 
 # Build rule for target.
@@ -700,6 +713,33 @@ src/rover_P_control.cpp.s:
 	$(MAKE) -f CMakeFiles/rover_P_control.dir/build.make CMakeFiles/rover_P_control.dir/src/rover_P_control.cpp.s
 .PHONY : src/rover_P_control.cpp.s
 
+src/rover_WP_nav.o: src/rover_WP_nav.cpp.o
+
+.PHONY : src/rover_WP_nav.o
+
+# target to build an object file
+src/rover_WP_nav.cpp.o:
+	$(MAKE) -f CMakeFiles/rover_WP_nav.dir/build.make CMakeFiles/rover_WP_nav.dir/src/rover_WP_nav.cpp.o
+.PHONY : src/rover_WP_nav.cpp.o
+
+src/rover_WP_nav.i: src/rover_WP_nav.cpp.i
+
+.PHONY : src/rover_WP_nav.i
+
+# target to preprocess a source file
+src/rover_WP_nav.cpp.i:
+	$(MAKE) -f CMakeFiles/rover_WP_nav.dir/build.make CMakeFiles/rover_WP_nav.dir/src/rover_WP_nav.cpp.i
+.PHONY : src/rover_WP_nav.cpp.i
+
+src/rover_WP_nav.s: src/rover_WP_nav.cpp.s
+
+.PHONY : src/rover_WP_nav.s
+
+# target to generate assembly for a file
+src/rover_WP_nav.cpp.s:
+	$(MAKE) -f CMakeFiles/rover_WP_nav.dir/build.make CMakeFiles/rover_WP_nav.dir/src/rover_WP_nav.cpp.s
+.PHONY : src/rover_WP_nav.cpp.s
+
 src/velocity_sending_node.o: src/velocity_sending_node.cpp.o
 
 .PHONY : src/velocity_sending_node.o
@@ -737,6 +777,7 @@ help:
 	@echo "... test"
 	@echo "... install"
 	@echo "... install/local"
+	@echo "... rover_WP_nav"
 	@echo "... velocity_sending_node"
 	@echo "... PN_node"
 	@echo "... edit_cache"
@@ -783,6 +824,9 @@ help:
 	@echo "... src/rover_P_control.o"
 	@echo "... src/rover_P_control.i"
 	@echo "... src/rover_P_control.s"
+	@echo "... src/rover_WP_nav.o"
+	@echo "... src/rover_WP_nav.i"
+	@echo "... src/rover_WP_nav.s"
 	@echo "... src/velocity_sending_node.o"
 	@echo "... src/velocity_sending_node.i"
 	@echo "... src/velocity_sending_node.s"

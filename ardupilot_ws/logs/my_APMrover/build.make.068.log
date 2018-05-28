@@ -1,5 +1,5 @@
-[ 25%] Built target rover_WP_nav
 [ 50%] Built target velocity_sending_node
+[ 50%] Built target rover_WP_nav
 [35m[1mScanning dependencies of target rover_P_control[0m
 [ 75%] Built target PN_node
 [ 87%] [32mBuilding CXX object CMakeFiles/rover_P_control.dir/src/rover_P_control.cpp.o[0m

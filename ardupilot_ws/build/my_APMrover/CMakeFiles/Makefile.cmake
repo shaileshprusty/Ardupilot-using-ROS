@@ -162,6 +162,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/rover_WP_nav.dir/DependInfo.cmake"
   "CMakeFiles/velocity_sending_node.dir/DependInfo.cmake"
   "CMakeFiles/PN_node.dir/DependInfo.cmake"
   "CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/DependInfo.cmake"
