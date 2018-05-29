@@ -95,7 +95,7 @@ int main(int argc, char **argv)
   ifstream file ("mission.txt");
   string num;
 
-  ros::init(argc, argv, "copter_P_control");
+  ros::init(argc, argv, "rover_WP_nav");
 
   ros::NodeHandle l, m, n;
 

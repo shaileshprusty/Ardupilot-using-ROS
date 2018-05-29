@@ -87,6 +87,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/opt/ros/kinetic/share/rosgraph_msgs/cmake/rosgraph_msgs-msg-extras.cmake"
   "/opt/ros/kinetic/share/rosgraph_msgs/cmake/rosgraph_msgsConfig-version.cmake"
   "/opt/ros/kinetic/share/rosgraph_msgs/cmake/rosgraph_msgsConfig.cmake"
+  "/opt/ros/kinetic/share/rospy/cmake/rospyConfig-version.cmake"
+  "/opt/ros/kinetic/share/rospy/cmake/rospyConfig.cmake"
   "/opt/ros/kinetic/share/rostime/cmake/rostimeConfig-version.cmake"
   "/opt/ros/kinetic/share/rostime/cmake/rostimeConfig.cmake"
   "/opt/ros/kinetic/share/sensor_msgs/cmake/sensor_msgs-msg-extras.cmake"

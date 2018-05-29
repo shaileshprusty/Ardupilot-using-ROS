@@ -26,7 +26,7 @@ int main(int argv, char **argc)
 {
   geometry_msgs::Twist msg;
   
-  ros::init(argv,argc,"control_node");
+  ros::init(argv,argc,"velocity_sending_node");
   
   ros::NodeHandle n;
   

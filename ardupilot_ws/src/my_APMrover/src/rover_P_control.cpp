@@ -86,7 +86,7 @@ void compass_Callback(const std_msgs::Float64::ConstPtr& angle)
 
 int main(int argc, char **argv)
 {
-  ros::init(argc, argv, "copter_P_control");
+  ros::init(argc, argv, "rover_P_control");
 
   ros::NodeHandle l, m, n;
 
