@@ -261,7 +261,7 @@ def algo():
 		Wi2 = utm.from_latlon(finalLat, finalLong)
 		# des = atan2(Wi2[1] - Wi1[1], Wi2[0] - Wi1[0])
 
-#		vmag, des = pot_fields(finalLat, finalLong)
+		vmag, des = pot_fields(finalLat, finalLong)
 		print 'Des', des
 
 		print 'heading angle', currAng
